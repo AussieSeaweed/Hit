@@ -318,7 +318,7 @@ class Player extends WorldEntity {
   private final Vec2 upDirection = new Vec2(0, -1), downDirection = new Vec2(0, 1), leftDirection = new Vec2(-1, 0), rightDirection = new Vec2(1, 0);
   private final float movingForce = 5000;
   private final color bloodColor = color(175, 0, 0);
-  private final int maxHealth = 1000;
+  private final int maxHealth = 100000000; // DEBUG
   
   public Player(String name, Vec2 location, float angle, float diameter, color fillColor, color strokeColor, float strokeWeightValue, Box2DProcessing box2d, Environment environment) {
     super(name, location, angle, diameter, fillColor, strokeColor, strokeWeightValue, box2d, environment);
